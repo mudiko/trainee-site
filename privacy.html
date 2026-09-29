@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy &mdash; Trainee</title>
+<meta name="description" content="Privacy policy for the Trainee mobile game. The app collects nothing and sends nothing off the device.">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #0a0512;
+    --surface: #1a0f2e;
+    --line: #412a6b;
+    --text: #fbf6ff;
+    --muted: #c2b0e0;
+    --accent: #ff3d8a;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0 20px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  header { padding: 56px 0 8px; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin: 40px 0 10px; }
+  h3 { font-size: 1rem; margin: 26px 0 8px; color: var(--muted); }
+  p { margin: 0 0 16px; }
+  ul { margin: 0 0 16px; padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  a:hover { color: #fff; }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+  }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 12px 0 28px; }
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 0 0 8px;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+  nav.crumbs { padding-top: 32px; font-size: 0.9rem; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <nav class="crumbs"><a href="index.html">&larr; Trainee</a></nav>
+
+  <header>
+    <h1>Privacy policy</h1>
+  </header>
+  <p class="meta">Trainee for iOS and Android &middot; Last updated 28 September 2026</p>
+
+  <div class="lede">
+    <p><strong>Trainee does not collect any data about you.</strong> It has no
+    account system, no servers, and no code that sends anything anywhere. Your
+    run is saved as one small file on your own phone, and that is the only
+    place it exists.</p>
+  </div>
+
+  <h2>What we collect</h2>
+
+  <p>Nothing. The app contains no analytics service, no advertising libraries,
+  no crash reporting service, no in-app purchase libraries and no social or
+  sign-in integrations. It does not ask for your name, your email address, your
+  contacts, your location, your photos, your microphone or your camera. It does
+  not read your advertising identifier or any other device identifier.</p>
+
+  <p>The app has no networking code at all. On Android it does not declare the
+  <code>INTERNET</code> permission. The only system feature it uses is the one
+  that tells it where its own private storage folder is, so it can write your
+  save file there.</p>
+
+  <h2>What the app stores on your device</h2>
+
+  <p>One file, <code>run.json</code>, inside the app's own documents folder.
+  It is unusually small, because of how the game is built: the game is
+  deterministic, so instead of saving the state of your run it saves the
+  instructions for rebuilding it, and replays them when you come back.</p>
+
+  <p>The whole file is three things:</p>
+
+  <ul>
+    <li>a seed &mdash; one number the game uses to decide what happens</li>
+    <li>the name you typed for your character</li>
+    <li>the list of choices you tapped, in order</li>
+  </ul>
+
+  <p>That is all of it. There are no statistics in the file, no timestamps, no
+  device information and no identifiers. It is plain readable JSON and you can
+  open it with any text editor. None of it is transmitted.</p>
+
+  <p>The name you type is treated as a character name, not as your name. It is
+  never sent anywhere and never shown to anyone else, because there is nobody
+  else in the app.</p>
+
+  <p>The game's content &mdash; every event, every line of writing &mdash;
+  ships inside the app as a bundled file. Nothing is downloaded at runtime, so
+  there is no request to a content server and nothing to log.</p>
+
+  <h3>Device backups</h3>
+
+  <p>Because the save lives in the app's documents folder, it is picked up by
+  your phone's normal backup: Android Auto Backup on Android, and device or
+  iCloud backup on iOS. That is deliberate, so reinstalling the app does not
+  delete a run in progress. Those backups are handled by Apple and Google under
+  their own privacy policies and your own backup settings. We cannot see them,
+  and we have no way to read your save.</p>
+
+  <h2>Accounts, online play, leaderboards</h2>
+
+  <p>There are none. There is no login, no friends list, no chat, no cloud save
+  and no online leaderboard. The other characters in the game &mdash; the other
+  trainees, the trainers, the company &mdash; are invented by the game. They are
+  not other people and they are never presented as other people. The entire game
+  works with the phone in aeroplane mode.</p>
+
+  <p>If online features are ever added, this page will be updated before they
+  ship and the store listing's privacy answers will be redone to match.</p>
+
+  <h2>Advertising and purchases</h2>
+
+  <p>The app contains no advertising and no in-app purchases. There is no ad
+  network in the build, so there is no ad profiling, no App Tracking
+  Transparency prompt and nothing to opt out of. Nothing in the game can be
+  bought, and no outcome can be paid for.</p>
+
+  <h2>Sharing a run</h2>
+
+  <p>The screen at the end of a run has a <em>Copy run</em> button. It puts a
+  short summary of your run, and its seed, onto your device's clipboard so you
+  can paste it somewhere yourself if you want to. It sends nothing on its own,
+  and we never see it. What happens to it after you paste it is up to you and
+  the app you paste it into.</p>
+
+  <h2>Deleting your data</h2>
+
+  <p>Uninstalling Trainee deletes the app's documents folder, and with it the
+  save file. There is nothing left on a server, because there is no server.</p>
+
+  <p>Two things to know:</p>
+
+  <ul>
+    <li>Your phone's backup may still hold a copy of the save after you
+    uninstall. Clearing that is done in your device's backup settings, not in
+    the game.</li>
+    <li>Starting a new life replaces the existing one. There is one save, and
+    beginning again overwrites it.</li>
+  </ul>
+
+  <h2>Children</h2>
+
+  <p>Trainee is rated 12+ and is not directed at young children, but little of
+  that matters here: the app collects no personal data from anyone, of any age.
+  There are no ads, no purchases, no chat, no user profiles and no way for one
+  player to see another player's content. Nothing a child types into the game
+  leaves the device.</p>
+
+  <p>We do not knowingly collect personal information from children, because we
+  do not collect personal information at all. If you believe something in the
+  app contradicts this, please write to the address below and we will fix it.</p>
+
+  <h2>Your rights</h2>
+
+  <p>Data protection law gives you rights to access, correct, export and delete
+  personal data held about you. We hold none, so there is nothing for us to
+  hand over or erase. Your save file is yours, on your device, and you can read
+  it with any text editor.</p>
+
+  <h2>Changes to this policy</h2>
+
+  <p>If the app starts doing something this page does not describe &mdash;
+  analytics, ads, purchases, cloud save &mdash; this page is updated first, with
+  a new date at the top, and the store privacy forms are updated with it. We
+  will not quietly add collection under an old policy.</p>
+
+  <h2>Contact</h2>
+
+  <p>Questions about privacy, or anything on this page:
+  <a href="mailto:mert@maindtec.de">mert@maindtec.de</a>.</p>
+
+  <footer>
+    <p><a href="index.html">Home</a> &middot; <a href="terms.html">Terms of use</a> &middot; <a href="support.html">Support</a></p>
+    <p>Trainee is made and published by maindtec.</p>
+  </footer>
+
+</main>
+</body>
+</html>
